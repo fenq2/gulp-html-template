@@ -1,0 +1,32 @@
+{
+	"syntax": "scss",
+	"extends": ["stylelint-config-standard", "stylelint-config-htmlacademy"],
+	"plugins": [
+		"stylelint-order"
+	],
+	"rules": { 
+		"order/order": [
+			"declarations",
+			{
+				"type": "at-rule",
+				"name": "media"
+			},
+			{
+				"type": "rule",
+				"selector": "^&::(before|after)"
+			},
+			{
+				"type": "rule",
+				"selector": "^&:\\w"
+			},
+			{
+				"type": "rule",
+				"selector": "^&_"
+			},
+			{
+				"type": "rule",
+				"selector": "^."
+			}
+		],
+	}
+}

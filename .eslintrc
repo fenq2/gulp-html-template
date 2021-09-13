@@ -1,0 +1,32 @@
+  
+{
+	"parser": "esprima",
+    "extends": [
+		"standard",
+		"airbnb"
+	],
+    "plugins": [
+        "standard",
+		"promise",
+		"react"
+	],
+	"env": {
+		"browser": true,
+		"es6": true,
+		"jquery": true
+	},
+	"rules": {
+		"semi": 0,
+		"one-var": 0,
+		"indent": ["warn", "tab"],
+		"no-tabs": 0,
+		"no-undef": 0,
+		"no-multi-spaces": 0,
+		"eol-last": 0
+	},
+	"settings": {
+		"react": {
+			"version": "999.999.999"
+		}
+	}
+}
